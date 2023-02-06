@@ -1,0 +1,76 @@
+::selection {
+  background: var(--selection-bgcolor);
+  color: var(--selection-color);
+}
+
+::-webkit-scrollbar {
+  width: var(--scroll-width);
+
+  &-track {
+    background: var(--scroll-track-bgcolor);
+  }
+
+  &-thumb {
+    background: var(--scroll-thumb-bgcolor);
+  }
+
+  &-thumb:hover {
+    background: var(--scroll-thumb-hover-bgcolor);
+  }
+}
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+  color: var(--app-color);
+  background: var(--bgColor);
+  line-height: 1.5;
+}
+
+h1 {
+  margin: 0;
+}
+
+button {
+  background: var(--btn-bgcolor);
+  color: var(--btn-color);
+  font-weight: normal;
+  text-shadow: 0px 1px var(--btn-shadow-color);
+  font-family: var(--font-family);
+  border: var(--btn-border);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  outline: none;
+  min-width: 8.75rem;
+
+  &:hover {
+    background: var(--btn-hover-bgcolor);
+  }
+  &:active {
+    background: var(--btn-active-bgcolor);
+  }
+  & > span {
+    color: var(--btn-badge-color);
+    background-color: var(--btn-badge-bgcolor);
+    font-size: 0.75rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+  }
+}
